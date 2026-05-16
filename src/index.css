@@ -4,39 +4,56 @@
 
 @layer base {
   :root {
-    --background: 198 80% 75%;
+    --background: 30 30% 80%;
     --foreground: 25 40% 18%;
 
+    /* sky (visible through window) */
     --sky-top: 200 90% 78%;
-    --sky-mid: 30 90% 80%;
-    --sky-bottom: 45 95% 82%;
+    --sky-mid: 200 80% 70%;
+    --sky-bottom: 195 60% 62%;
     --sun-moon: 48 100% 70%;
     --cloud: 0 0% 100%;
-    --mtn-back: 220 25% 60%;
-    --mtn-back-snow: 210 30% 92%;
-    --hill-back: 130 35% 50%;
+    --star: 60 100% 90%;
+
+    /* landscape in window */
     --hill-mid: 130 40% 38%;
     --hill-front: 125 45% 28%;
-    --grass-light: 100 55% 50%;
-    --grass: 110 50% 38%;
-    --grass-dark: 120 45% 25%;
-    --dirt-light: 30 50% 38%;
-    --dirt: 28 50% 28%;
-    --dirt-dark: 25 50% 20%;
-    --stone: 30 10% 45%;
-    --tree-leaf: 140 50% 28%;
-    --tree-leaf-light: 130 55% 40%;
-    --tree-trunk: 25 45% 22%;
-    --tree-trunk-light: 28 40% 32%;
-    --fire-1: 30 100% 55%;
-    --fire-2: 45 100% 60%;
-    --fire-3: 0 85% 50%;
-    --star: 60 100% 90%;
-    --flower-1: 340 80% 65%;
-    --flower-2: 50 95% 65%;
-    --flower-3: 280 60% 70%;
-    --water: 200 80% 60%;
 
+    /* bedroom */
+    --wall: 30 35% 82%;
+    --wall-dot: 30 30% 77%;
+    --ceiling: 30 25% 74%;
+    --floor-board: 25 55% 32%;
+    --floor-board-alt: 25 50% 28%;
+    --floor-gap: 25 40% 20%;
+
+    /* desk */
+    --desk-top: 25 50% 38%;
+    --desk-front-clr: 25 48% 30%;
+    --desk-edge: 25 45% 22%;
+    --desk-drawer-clr: 25 42% 35%;
+    --desk-knob: 40 60% 65%;
+
+    /* lamp */
+    --lamp-shade: 38 70% 68%;
+    --lamp-hi: 40 80% 78%;
+    --lamp-bulb: 45 95% 85%;
+
+    /* curtain */
+    --curtain-clr: 350 40% 42%;
+    --curtain-fold-clr: 350 35% 35%;
+    --curtain-tie-clr: 40 60% 65%;
+
+    /* window frame */
+    --win-frame: 30 15% 88%;
+    --win-frame-shadow: 30 10% 70%;
+
+    /* rug */
+    --rug-clr: 350 35% 45%;
+    --rug-pattern: 350 30% 38%;
+    --rug-fringe: 40 50% 70%;
+
+    /* UI */
     --card: 45 80% 95%;
     --card-foreground: 25 40% 18%;
     --popover: 45 80% 95%;
@@ -58,38 +75,46 @@
   }
 
   .dark {
-    --background: 240 50% 12%;
+    --background: 240 30% 12%;
     --foreground: 45 80% 92%;
 
     --sky-top: 245 70% 8%;
-    --sky-mid: 250 60% 18%;
-    --sky-bottom: 260 50% 28%;
+    --sky-mid: 250 60% 14%;
+    --sky-bottom: 255 50% 20%;
     --sun-moon: 50 30% 92%;
     --cloud: 245 30% 28%;
-    --mtn-back: 240 30% 22%;
-    --mtn-back-snow: 240 30% 50%;
-    --hill-back: 240 30% 18%;
-    --hill-mid: 240 35% 14%;
-    --hill-front: 240 40% 10%;
-    --grass-light: 150 30% 25%;
-    --grass: 150 30% 18%;
-    --grass-dark: 150 30% 12%;
-    --dirt-light: 28 25% 18%;
-    --dirt: 25 25% 12%;
-    --dirt-dark: 25 25% 8%;
-    --stone: 240 15% 28%;
-    --tree-leaf: 150 30% 16%;
-    --tree-leaf-light: 150 30% 24%;
-    --tree-trunk: 240 25% 12%;
-    --tree-trunk-light: 240 20% 20%;
-    --fire-1: 25 100% 60%;
-    --fire-2: 45 100% 65%;
-    --fire-3: 0 90% 55%;
     --star: 55 100% 88%;
-    --flower-1: 340 60% 50%;
-    --flower-2: 50 70% 55%;
-    --flower-3: 280 50% 55%;
-    --water: 220 50% 25%;
+
+    --hill-mid: 240 30% 14%;
+    --hill-front: 240 35% 10%;
+
+    --wall: 240 22% 16%;
+    --wall-dot: 240 20% 14%;
+    --ceiling: 240 20% 14%;
+    --floor-board: 25 28% 14%;
+    --floor-board-alt: 25 25% 12%;
+    --floor-gap: 25 22% 8%;
+
+    --desk-top: 25 28% 20%;
+    --desk-front-clr: 25 26% 16%;
+    --desk-edge: 25 24% 10%;
+    --desk-drawer-clr: 25 24% 18%;
+    --desk-knob: 40 40% 40%;
+
+    --lamp-shade: 38 50% 45%;
+    --lamp-hi: 40 55% 55%;
+    --lamp-bulb: 45 70% 60%;
+
+    --curtain-clr: 350 28% 25%;
+    --curtain-fold-clr: 350 24% 20%;
+    --curtain-tie-clr: 40 40% 40%;
+
+    --win-frame: 240 15% 28%;
+    --win-frame-shadow: 240 12% 18%;
+
+    --rug-clr: 350 25% 25%;
+    --rug-pattern: 350 20% 20%;
+    --rug-fringe: 40 30% 35%;
 
     --card: 240 40% 18%;
     --card-foreground: 45 80% 92%;
@@ -112,332 +137,941 @@
 }
 
 @layer base {
-  * { @apply border-border; }
-  html, body, #root { @apply h-full; }
+  * {
+    @apply border-border;
+  }
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Press Start 2P', 'VT323', monospace;
+    font-family: "Press Start 2P", "VT323", monospace;
     overflow: hidden;
   }
-  svg { shape-rendering: crispEdges; }
-  img { image-rendering: pixelated; }
+  svg {
+    shape-rendering: crispEdges;
+  }
+  img {
+    image-rendering: pixelated;
+  }
 }
 
 @layer utilities {
-  .pixel-font { font-family: 'Press Start 2P', monospace; }
-  .pixel-shadow { box-shadow: 4px 4px 0 0 hsl(var(--border)); }
-  .pixel-shadow-lg { box-shadow: 6px 6px 0 0 hsl(var(--border)); }
+  .pixel-font {
+    font-family: "Press Start 2P", monospace;
+  }
+  .pixel-shadow {
+    box-shadow: 4px 4px 0 0 hsl(var(--border));
+  }
+  .pixel-shadow-lg {
+    box-shadow: 6px 6px 0 0 hsl(var(--border));
+  }
 }
 
-/* ---------------- SKY ---------------- */
-.sky {
-  background: linear-gradient(
-    to bottom,
-    hsl(var(--sky-top)) 0%,
-    hsl(var(--sky-mid)) 55%,
-    hsl(var(--sky-bottom)) 100%
+/* ================================================================
+   BEDROOM — main container
+================================================================ */
+.bedroom {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---- wall ---- */
+.bedroom-wall {
+  position: absolute;
+  inset: 0;
+  background-color: hsl(var(--wall));
+  background-image: radial-gradient(
+    circle,
+    hsl(var(--wall-dot)) 1px,
+    transparent 1px
   );
+  background-size: 20px 20px;
+  transition: background-color 1.4s ease;
+}
+
+/* ---- ceiling strip ---- */
+.ceiling-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 14px;
+  background: hsl(var(--ceiling));
+  border-bottom: 3px solid hsl(var(--border) / 0.15);
+  z-index: 3;
   transition: background 1.4s ease;
 }
 
-/* ---------------- STARS ---------------- */
-.stars {
+/* ---- floor ---- */
+.bedroom-floor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 22%;
+  z-index: 2;
+  background: repeating-linear-gradient(
+    90deg,
+    hsl(var(--floor-board)) 0px,
+    hsl(var(--floor-board)) 58px,
+    hsl(var(--floor-gap)) 58px,
+    hsl(var(--floor-gap)) 60px,
+    hsl(var(--floor-board-alt)) 60px,
+    hsl(var(--floor-board-alt)) 118px,
+    hsl(var(--floor-gap)) 118px,
+    hsl(var(--floor-gap)) 120px
+  );
+  border-top: 4px solid hsl(var(--desk-edge));
+  transition: background 1.4s ease, border-color 1.4s ease;
+}
+.bedroom-floor::before {
+  content: "";
   position: absolute;
   inset: 0;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 1.4s ease;
-}
-.dark .stars { opacity: 1; }
-.star {
-  position: absolute;
-  width: 2px; height: 2px;
-  background: hsl(var(--star));
-  box-shadow: 0 0 4px hsl(var(--star));
-  animation: twinkle 2.4s steps(2) infinite;
-}
-.star.big { width: 3px; height: 3px; }
-.star.cross::before, .star.cross::after {
-  content: '';
-  position: absolute;
-  background: hsl(var(--star));
-}
-.star.cross::before { left: -2px; top: 0; width: 6px; height: 2px; }
-.star.cross::after { left: 0; top: -2px; width: 2px; height: 6px; }
-@keyframes twinkle {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
-/* shooting star (night only) */
-.shooting-star {
-  position: absolute;
-  top: 10%;
-  left: -10%;
-  width: 60px;
-  height: 2px;
-  background: linear-gradient(to right, transparent, hsl(var(--star)));
-  opacity: 0;
-  animation: shoot 8s ease-in infinite;
-  animation-delay: 2s;
-}
-.dark .shooting-star { display: block; }
-.shooting-star { display: none; }
-@keyframes shoot {
-  0% { transform: translate(0,0) rotate(20deg); opacity: 0; }
-  5% { opacity: 1; }
-  20% { transform: translate(120vw, 30vh) rotate(20deg); opacity: 0; }
-  100% { opacity: 0; }
-}
-
-/* ---------------- SUN / MOON ---------------- */
-.celestial {
-  position: absolute;
-  top: 7%;
-  width: 56px; height: 56px;
-  transition: left 1.4s ease;
-}
-.celestial .sun {
-  width: 100%; height: 100%;
-  background: hsl(var(--sun-moon));
-  box-shadow:
-    0 0 0 4px hsl(var(--sun-moon) / 0.4),
-    0 0 0 10px hsl(var(--sun-moon) / 0.2),
-    0 0 60px hsl(var(--sun-moon) / 0.7);
-  clip-path: polygon(
-    25% 0, 75% 0, 75% 8%, 92% 8%, 92% 25%, 100% 25%,
-    100% 75%, 92% 75%, 92% 92%, 75% 92%, 75% 100%,
-    25% 100%, 25% 92%, 8% 92%, 8% 75%, 0 75%,
-    0 25%, 8% 25%, 8% 8%, 25% 8%
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    transparent 38px,
+    hsl(var(--floor-gap) / 0.4) 38px,
+    hsl(var(--floor-gap) / 0.4) 40px
   );
 }
-.dark .celestial .sun {
-  background:
-    radial-gradient(circle at 35% 35%, transparent 4px, hsl(var(--sun-moon)) 5px) 8px 8px / 10px 10px,
-    hsl(var(--sun-moon));
-  background-blend-mode: multiply;
-  box-shadow: 0 0 60px hsl(var(--sun-moon) / 0.5);
-}
-/* moon craters in dark mode */
-.dark .celestial .sun::before,
-.dark .celestial .sun::after {
-  content: '';
+
+/* ---- rug ---- */
+.rug {
   position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, 55vw);
+  height: 40px;
+  background: hsl(var(--rug-clr));
+  border: 3px solid hsl(var(--rug-pattern));
+  z-index: 3;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0 8px,
+    hsl(var(--rug-pattern)) 8px 10px,
+    transparent 10px 18px
+  );
+  transition: background 1.4s ease, border-color 1.4s ease;
+}
+.rug::before,
+.rug::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 100%;
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    hsl(var(--rug-fringe)) 0 2px,
+    transparent 2px 5px
+  );
+}
+.rug::before {
+  top: -6px;
+  bottom: auto;
+}
+
+/* ================================================================
+   WINDOW
+================================================================ */
+.window-area {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.window-frame {
+  position: relative;
+  width: clamp(200px, 30vw, 340px);
+  height: clamp(160px, 28vh, 260px);
+  border: 6px solid hsl(var(--win-frame));
+  box-shadow: inset 0 0 0 2px hsl(var(--win-frame-shadow) / 0.3),
+    4px 4px 0 0 hsl(var(--border) / 0.15);
+  overflow: hidden;
+  transition: border-color 1.4s ease;
+}
+
+/* sky inside window */
+.window-sky {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    hsl(var(--sky-top)) 0%,
+    hsl(var(--sky-mid)) 50%,
+    hsl(var(--sky-bottom)) 100%
+  );
+  transition: background 1.4s ease;
+  overflow: hidden;
+}
+
+/* stars (night only) */
+.window-stars {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+  pointer-events: none;
+}
+.dark .window-stars {
+  opacity: 1;
+}
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: hsl(var(--star));
+  box-shadow: 0 0 3px hsl(var(--star));
+  animation: twinkle 2.4s steps(2) infinite;
+}
+.star.big {
+  width: 3px;
+  height: 3px;
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+/* celestial body in window */
+.win-celestial {
+  position: absolute;
+  top: 10%;
+  width: 28px;
+  height: 28px;
+  transition: left 1.4s ease;
+}
+.win-celestial .sun {
+  width: 100%;
+  height: 100%;
+  background: hsl(var(--sun-moon));
+  box-shadow: 0 0 0 3px hsl(var(--sun-moon) / 0.3),
+    0 0 20px hsl(var(--sun-moon) / 0.5);
+  clip-path: polygon(
+    25% 0,
+    75% 0,
+    75% 8%,
+    92% 8%,
+    92% 25%,
+    100% 25%,
+    100% 75%,
+    92% 75%,
+    92% 92%,
+    75% 92%,
+    75% 100%,
+    25% 100%,
+    25% 92%,
+    8% 92%,
+    8% 75%,
+    0 75%,
+    0 25%,
+    8% 25%,
+    8% 8%,
+    25% 8%
+  );
+}
+.dark .win-celestial .sun {
+  box-shadow: 0 0 30px hsl(var(--sun-moon) / 0.4);
+  clip-path: none;
+  border-radius: 0;
+}
+.dark .win-celestial .sun::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 25%;
+  left: 20%;
   background: hsl(var(--sun-moon) / 0.3);
 }
-.dark .celestial .sun::before { width: 8px; height: 8px; top: 30%; left: 25%; }
-.dark .celestial .sun::after { width: 6px; height: 6px; top: 55%; left: 60%; }
-
-/* ---------------- CLOUDS (pixelated) ---------------- */
-.cloud {
+.dark .win-celestial .sun::after {
+  content: "";
   position: absolute;
-  animation: drift linear infinite;
-  filter: drop-shadow(2px 2px 0 hsl(var(--border) / 0.2));
-}
-@keyframes drift {
-  from { transform: translateX(-200px); }
-  to { transform: translateX(110vw); }
-}
-
-/* ---------------- GROUND ---------------- */
-.ground-layer {
-  position: absolute;
-  left: 0; right: 0;
-  pointer-events: none;
-}
-
-/* solid ground (grass strip + dirt) */
-.solid-ground {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 18%;
-  background:
-    linear-gradient(
-      to bottom,
-      hsl(var(--grass-light)) 0,
-      hsl(var(--grass-light)) 6px,
-      hsl(var(--grass)) 6px,
-      hsl(var(--grass)) 14px,
-      hsl(var(--grass-dark)) 14px,
-      hsl(var(--grass-dark)) 18px,
-      hsl(var(--dirt-light)) 18px,
-      hsl(var(--dirt-light)) 22px,
-      hsl(var(--dirt)) 22px,
-      hsl(var(--dirt)) 100%
-    );
-  z-index: 3;
-}
-.solid-ground::before {
-  /* dirt pebble texture */
-  content: '';
-  position: absolute;
-  inset: 22px 0 0 0;
-  background-image:
-    radial-gradient(1px 1px at 8px 6px, hsl(var(--dirt-dark)) 99%, transparent),
-    radial-gradient(1px 1px at 24px 14px, hsl(var(--dirt-dark)) 99%, transparent),
-    radial-gradient(1px 1px at 38px 4px, hsl(var(--dirt-light)) 99%, transparent),
-    radial-gradient(2px 1px at 52px 18px, hsl(var(--stone)) 99%, transparent),
-    radial-gradient(1px 1px at 14px 26px, hsl(var(--dirt-dark)) 99%, transparent),
-    radial-gradient(1px 1px at 60px 10px, hsl(var(--dirt-light)) 99%, transparent);
-  background-size: 64px 32px;
-  opacity: 0.85;
-}
-.solid-ground::after {
-  /* grass blades poking up */
-  content: '';
-  position: absolute;
-  left: 0; right: 0; top: -3px;
+  width: 4px;
   height: 4px;
-  background-image:
-    linear-gradient(to right,
-      hsl(var(--grass-light)) 0 1px, transparent 1px 4px,
-      hsl(var(--grass-light)) 4px 5px, transparent 5px 9px,
-      hsl(var(--grass-dark)) 9px 10px, transparent 10px 14px,
-      hsl(var(--grass-light)) 14px 15px, transparent 15px 20px
-    );
-  background-size: 20px 4px;
-  background-repeat: repeat-x;
+  top: 55%;
+  left: 55%;
+  background: hsl(var(--sun-moon) / 0.3);
 }
 
-/* grass tufts */
-.tuft {
+/* clouds drifting across window */
+.win-cloud {
   position: absolute;
-  width: 6px; height: 5px;
-  background: hsl(var(--grass-dark));
-  box-shadow:
-    -3px -2px 0 0 hsl(var(--grass-dark)),
-    3px -2px 0 0 hsl(var(--grass-dark)),
-    0 -4px 0 0 hsl(var(--grass-light));
-  z-index: 4;
+  animation: cloud-drift linear infinite;
+}
+@keyframes cloud-drift {
+  from {
+    transform: translateX(-80px);
+  }
+  to {
+    transform: translateX(calc(100% + 80px));
+  }
 }
 
-/* flowers */
-.flower {
+/* birds flying across window */
+.win-bird {
   position: absolute;
-  width: 4px; height: 4px;
+  animation: bird-fly linear infinite;
 }
-.flower::before {
-  content: '';
-  position: absolute;
-  width: 2px; height: 6px;
-  background: hsl(var(--grass-dark));
-  bottom: 4px; left: 1px;
+@keyframes bird-fly {
+  0% {
+    transform: translate(-30px, 0);
+  }
+  50% {
+    transform: translate(50%, -8px);
+  }
+  100% {
+    transform: translate(calc(100% + 30px), 0);
+  }
 }
-.flower::after {
-  content: '';
-  position: absolute;
-  width: 6px; height: 6px;
-  background: var(--petal);
-  bottom: 8px; left: -1px;
-  box-shadow:
-    -2px 2px 0 0 var(--petal),
-    8px 2px 0 0 var(--petal),
-    inset 0 0 0 2px var(--petal);
-}
-.flower.f1 { --petal: hsl(var(--flower-1)); }
-.flower.f2 { --petal: hsl(var(--flower-2)); }
-.flower.f3 { --petal: hsl(var(--flower-3)); }
 
-/* ---------------- CAMPFIRE ---------------- */
-.flame-glow {
+/* distant landscape strip at bottom of window */
+.win-landscape {
   position: absolute;
-  width: 200px; height: 200px;
-  border-radius: 50%;
-  background: radial-gradient(circle, hsl(var(--fire-1) / 0.5) 0%, transparent 70%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+}
+
+/* crossbars */
+.cross-h {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: hsl(var(--win-frame));
+  transform: translateY(-50%);
+  z-index: 6;
+  box-shadow: 0 1px 0 hsl(var(--win-frame-shadow) / 0.3);
+  transition: background 1.4s ease;
+}
+.cross-v {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: hsl(var(--win-frame));
+  transform: translateX(-50%);
+  z-index: 6;
+  box-shadow: 1px 0 0 hsl(var(--win-frame-shadow) / 0.3);
+  transition: background 1.4s ease;
+}
+
+/* windowsill */
+.windowsill {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(clamp(200px, 30vw, 340px) + 40px);
+  height: 14px;
+  background: hsl(var(--win-frame));
+  border: 3px solid hsl(var(--win-frame-shadow) / 0.25);
+  box-shadow: 3px 3px 0 hsl(var(--border) / 0.1);
+  z-index: 11;
+  transition: background 1.4s ease;
+}
+
+/* ---- curtains ---- */
+.curtain {
+  width: clamp(32px, 5vw, 54px);
+  height: clamp(180px, 32vh, 290px);
+  background: hsl(var(--curtain-clr));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: background 1.4s ease;
+  z-index: 9;
+}
+.curtain-fold {
+  flex: 1;
+  border-bottom: 2px solid hsl(var(--curtain-fold-clr));
+}
+.curtain-fold:first-child {
+  border-right: 2px solid hsl(var(--curtain-fold-clr));
+}
+.curtain-fold:last-child {
+  border-left: 2px solid hsl(var(--curtain-fold-clr));
+}
+.curtain-tie {
+  position: absolute;
+  bottom: 25%;
+  width: 110%;
+  height: 8px;
+  background: hsl(var(--curtain-tie-clr));
+  border: 1px solid hsl(var(--border) / 0.2);
+}
+.curtain-l .curtain-tie {
+  right: -5%;
+}
+.curtain-r .curtain-tie {
+  left: -5%;
+}
+
+/* ================================================================
+   DESK
+================================================================ */
+.desk-area {
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(380px, 65vw, 760px);
+  z-index: 12;
+}
+
+.desk-items {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 20px);
+  padding: 0 12px;
+  position: relative;
+  z-index: 13;
+}
+
+.desk-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* desk surface & body */
+.desk-top {
+  width: 100%;
+  height: 8px;
+  background: hsl(var(--desk-top));
+  border-top: 3px solid hsl(var(--desk-edge));
+  box-shadow: 0 2px 0 hsl(var(--desk-edge) / 0.3);
+  transition: background 1.4s ease, border-color 1.4s ease;
+}
+.desk-front {
+  width: 100%;
+  height: 50px;
+  background: hsl(var(--desk-front-clr));
+  border: 3px solid hsl(var(--desk-edge));
+  border-top: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  transition: background 1.4s ease, border-color 1.4s ease;
+}
+.desk-drawer {
+  width: 80px;
+  height: 28px;
+  background: hsl(var(--desk-drawer-clr));
+  border: 2px solid hsl(var(--desk-edge));
+  position: relative;
+  transition: background 1.4s ease, border-color 1.4s ease;
+}
+.desk-drawer::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: hsl(var(--desk-knob));
+  border: 1px solid hsl(var(--desk-edge));
+  transition: background 1.4s ease;
+}
+
+/* ================================================================
+   MONITOR
+================================================================ */
+.computer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.monitor-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.monitor-screen {
+  width: clamp(100px, 14vw, 160px);
+  height: clamp(68px, 10vw, 100px);
+  background: #0c1020;
+  border: 4px solid #2a2a32;
+  border-bottom: 2px solid #2a2a32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.monitor-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    hsl(200 80% 40% / 0.05) 50%,
+    transparent 100%
+  );
+  background-size: 100% 4px;
   pointer-events: none;
-  animation: glow 2s ease-in-out infinite;
 }
-@keyframes glow {
-  0%,100% { transform: scale(1); opacity: 0.8; }
-  50% { transform: scale(1.1); opacity: 1; }
+.monitor-greeting {
+  color: #4ae04a;
+  font-size: clamp(5px, 0.9vw, 8px);
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0 0 4px #4ae04a80;
 }
-
-/* ---------------- ANIMAL WALKING ---------------- */
-.walker {
-  position: absolute;
-  animation-name: walk;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+.cursor-blink {
+  color: #4ae04a;
+  font-size: clamp(6px, 1vw, 9px);
+  animation: blink-cursor 1s steps(2) infinite;
 }
-@keyframes walk {
-  0% { transform: translateX(-15vw); }
-  100% { transform: translateX(115vw); }
-}
-.bobber {
-  animation: bob 0.5s steps(2) infinite;
-}
-@keyframes bob {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-2px); }
-}
-.flyer {
-  position: absolute;
-  animation: fly 22s linear infinite;
-}
-@keyframes fly {
-  0% { transform: translate(-15vw, 0); }
-  50% { transform: translate(50vw, -40px); }
-  100% { transform: translate(115vw, 0); }
-}
-.flap { animation: flap 0.4s steps(2) infinite; transform-origin: center; }
-@keyframes flap {
-  0%,100% { transform: scaleY(1); }
-  50% { transform: scaleY(0.6); }
+@keyframes blink-cursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
-/* fire flicker via SVG */
-.flicker { animation: flicker 0.3s steps(2) infinite; transform-origin: 12px 20px; }
-@keyframes flicker {
-  0%,100% { transform: scaleY(1); }
-  50% { transform: scaleY(1.08); }
+.monitor-chin {
+  width: clamp(100px, 14vw, 160px);
+  height: 6px;
+  background: #2a2a32;
+  border: 2px solid #222228;
+  border-top: none;
+  position: relative;
+}
+.monitor-chin::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 3px;
+  background: #4ae04a;
+  border-radius: 0;
 }
 
-/* fireflies (day & night) */
-.firefly {
+.monitor-neck {
+  width: 20px;
+  height: 14px;
+  background: #2a2a32;
+  border-left: 2px solid #222228;
+  border-right: 2px solid #222228;
+}
+.monitor-foot {
+  width: 50px;
+  height: 6px;
+  background: #2a2a32;
+  border: 2px solid #222228;
+}
+
+/* keyboard */
+.keyboard-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px 6px;
+  background: #3a3a42;
+  border: 2px solid #2a2a32;
+  margin-top: 4px;
+}
+.kb-row {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+}
+.kb-key {
+  width: 6px;
+  height: 5px;
+  background: #4a4a52;
+  border: 1px solid #3a3a42;
+}
+.kb-space {
+  width: 30px;
+}
+
+/* ================================================================
+   LAMP
+================================================================ */
+.lamp-wrap {
+  position: relative;
+}
+.lamp-glow {
   position: absolute;
-  width: 3px; height: 3px;
-  background: hsl(var(--fire-2));
+  bottom: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  box-shadow: 0 0 6px hsl(var(--fire-2));
-  animation: float 6s ease-in-out infinite;
-  opacity: 0.7;
+  background: radial-gradient(
+    circle,
+    hsl(var(--lamp-bulb) / 0.35) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: lamp-pulse 3s ease-in-out infinite;
+  z-index: 1;
 }
-.dark .firefly { opacity: 1; }
-@keyframes float {
-  0%,100% { transform: translate(0,0); }
-  25% { transform: translate(15px, -20px); }
-  50% { transform: translate(-10px, -40px); }
-  75% { transform: translate(20px, -25px); }
+@keyframes lamp-pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.08);
+  }
 }
 
-/* smoke */
-.smoke {
+/* ================================================================
+   TROPHY
+================================================================ */
+.trophy-wrap {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: transform 0.15s ease;
+}
+.trophy-wrap:hover {
+  transform: translateY(-3px);
+}
+.trophy-wrap:active {
+  transform: translateY(1px);
+}
+.trophy-sparkle {
   position: absolute;
-  width: 4px; height: 4px;
-  background: hsl(var(--cloud) / 0.7);
-  animation: rise 4s linear infinite;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  background: #f8e878;
+  box-shadow: 0 0 6px #f8e878;
+  animation: sparkle 1.5s ease-in-out infinite;
+  z-index: 3;
+  pointer-events: none;
 }
-@keyframes rise {
-  0% { transform: translate(0,0) scale(1); opacity: 0.7; }
-  100% { transform: translate(-20px, -120px) scale(2); opacity: 0; }
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 }
 
-/* ---------------- INTERACTIVE ---------------- */
-.social-btn {
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+/* ================================================================
+   PHONE STAND
+================================================================ */
+.phone-wrap {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: transform 0.15s ease;
 }
-.social-btn:hover {
+.phone-wrap:hover {
+  transform: translateY(-3px);
+}
+.phone-wrap:active {
+  transform: translateY(1px);
+}
+.phone-stand-unit {
+  position: relative;
+}
+.phone-label {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5px;
+  color: #5090ff;
+  pointer-events: none;
+  text-shadow: 0 0 3px #5090ff80;
+}
+
+/* ================================================================
+   DAY / NIGHT TOGGLE
+================================================================ */
+.dn-toggle {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-size: 9px;
+  background: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  border: 3px solid hsl(var(--border));
+  box-shadow: 3px 3px 0 0 hsl(var(--border));
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease,
+    background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+.dn-toggle:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 0 hsl(var(--border));
+  box-shadow: 5px 5px 0 0 hsl(var(--border));
 }
-.social-btn:active {
+.dn-toggle:active {
   transform: translate(2px, 2px);
   box-shadow: 0 0 0 0 hsl(var(--border));
 }
 
-/* sign sway */
-.sign-sway { animation: sway-sign 5s ease-in-out infinite; transform-origin: top center; }
-@keyframes sway-sign {
-  0%,100% { transform: rotate(-1.2deg); }
-  50% { transform: rotate(1.2deg); }
+/* ================================================================
+   OVERLAYS
+================================================================ */
+.overlay-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0 0% 0% / 0.65);
+  animation: fade-in 0.3s ease;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---- achievements panel ---- */
+.overlay-panel {
+  position: relative;
+  background: hsl(var(--card));
+  border: 4px solid hsl(var(--border));
+  box-shadow: 6px 6px 0 0 hsl(var(--border));
+  padding: 28px 24px 20px;
+  max-width: 420px;
+  width: 90vw;
+  animation: panel-pop 0.35s ease;
+}
+@keyframes panel-pop {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.overlay-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: hsl(var(--card-foreground));
+  line-height: 1;
+}
+.overlay-title {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 16px;
+  color: hsl(var(--card-foreground));
+}
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.achievement-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  background: hsl(var(--muted) / 0.5);
+  border: 2px solid hsl(var(--border) / 0.2);
+}
+.achievement-label {
+  font-size: 6px;
+  color: hsl(var(--muted-foreground));
+}
+.overlay-hint {
+  text-align: center;
+  font-size: 7px;
+  color: hsl(var(--muted-foreground));
+  opacity: 0.7;
+}
+
+/* ---- socials phone overlay ---- */
+.phone-backdrop {
+  perspective: 800px;
+}
+.phone-zoom-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  animation: phone-zoom 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes phone-zoom {
+  from {
+    transform: scale(0.08) translateY(40vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.phone-big {
+  width: clamp(180px, 28vw, 240px);
+  background: #1a1a22;
+  border: 4px solid #2a2a34;
+  box-shadow: 6px 6px 0 0 hsl(var(--border) / 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 8px;
+}
+.phone-big-notch {
+  width: 40px;
+  height: 6px;
+  background: #2a2a34;
+  margin-bottom: 8px;
+}
+.phone-big-screen {
+  width: calc(100% - 16px);
+  background: #0c1020;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.phone-big-title {
+  font-size: 11px;
+  color: #7ab8ff;
+  text-align: center;
+  text-shadow: 0 0 6px #7ab8ff60;
+}
+.phone-big-home {
+  width: 36px;
+  height: 4px;
+  background: #3a3a44;
+  margin-top: 8px;
+  border-radius: 0;
+}
+
+.phone-social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: hsl(0 0% 100% / 0.06);
+  border: 2px solid hsl(0 0% 100% / 0.08);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+.social-row:hover {
+  background: hsl(0 0% 100% / 0.12);
+  transform: translateX(2px);
+}
+.social-circle {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+}
+.social-name {
+  font-size: 7px;
+  color: #c0d0ff;
+}
+.phone-close-hint {
+  font-size: 7px;
+  color: hsl(0 0% 100% / 0.5);
+}
+
+/* ================================================================
+   RESPONSIVE
+================================================================ */
+@media (max-width: 640px) {
+  .window-frame {
+    width: 55vw;
+    height: 25vh;
+  }
+  .windowsill {
+    width: calc(55vw + 30px);
+  }
+  .desk-area {
+    width: 95vw;
+  }
+  .desk-items {
+    gap: 4px;
+  }
+  .monitor-screen {
+    width: 80px;
+    height: 56px;
+  }
+  .monitor-greeting {
+    font-size: 4px;
+  }
+  .curtain {
+    width: 24px;
+  }
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
