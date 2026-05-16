@@ -40,13 +40,19 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p pages-artifact
+          cp index.html pages-artifact/
+          cp -R dist/assets pages-artifact/assets
+          cp -R public/. pages-artifact/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the built Vite app
-          path: './dist'
+          # Upload the browser-ready page and compiled Vite assets.
+          path: './pages-artifact'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
