@@ -1,31 +1,295 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>james' personal website</title>
-    <meta name="description" content="James's personal cozy corner" />
-    <meta name="author" content="James" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>james' personal website</title>
+  <meta name="description" content="James's cozy pixel corner">
+  <meta property="og:title" content="james' personal website">
+  <meta property="og:description" content="James's cozy pixel corner">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="james-logo.png">
+  <link rel="icon" type="image/png" href="james-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="james' personal website" />
-    <meta property="og:description" content="James's personal cozy corner" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="james-logo.png" />
+<div id="room">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@James" />
-    <meta name="twitter:image" content="james-logo.png" />
-    <link rel="icon" type="image/png" href="james-logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/My-Personal-Website/assets/index-BVQSUFow.js"></script>
-    <link rel="stylesheet" crossorigin href="/My-Personal-Website/assets/index-CFDmZPnD.css">
-  </head>
+  <!-- ======= WALL ======= -->
+  <div id="wall"></div>
+  <div id="wall-light"></div>
 
-  <body>
-    <div id="root"></div>
-  </body>
+  <!-- ======= WINDOW ======= -->
+  <div id="win-wrap">
+    <!-- curtain left -->
+    <div class="curtain crt-l">
+      <div class="crt-stripe"></div>
+      <div class="crt-stripe"></div>
+      <div class="crt-stripe"></div>
+      <div class="crt-tie"></div>
+    </div>
+
+    <!-- window -->
+    <div id="win-frame">
+      <div id="sky">
+        <div id="stars-layer"></div>
+        <div id="sun-moon"><div id="orb"></div></div>
+
+        <!-- clouds -->
+        <div class="cloud cl-1">
+          <svg viewBox="0 0 16 7" width="58" height="25"><g fill="var(--cld)"><rect x="3" y="1" width="4" height="1"/><rect x="8" y="1" width="4" height="1"/><rect x="2" y="2" width="12" height="1"/><rect x="1" y="3" width="14" height="2"/><rect x="2" y="5" width="12" height="1"/><rect x="3" y="6" width="10" height="1"/></g></svg>
+        </div>
+        <div class="cloud cl-2">
+          <svg viewBox="0 0 12 5" width="44" height="18"><g fill="var(--cld)"><rect x="2" y="0" width="3" height="1"/><rect x="6" y="0" width="3" height="1"/><rect x="1" y="1" width="10" height="1"/><rect x="0" y="2" width="12" height="2"/><rect x="1" y="4" width="10" height="1"/></g></svg>
+        </div>
+        <div class="cloud cl-3">
+          <svg viewBox="0 0 10 4" width="34" height="14"><g fill="var(--cld)"><rect x="2" y="0" width="6" height="1"/><rect x="1" y="1" width="8" height="2"/><rect x="2" y="3" width="6" height="1"/></g></svg>
+        </div>
+
+        <!-- birds -->
+        <svg class="bird b-1" viewBox="0 0 9 5" width="14" height="8"><polyline points="0,0 1,1 2,2 3,3 4,3 5,3 6,2 7,1 8,0" fill="none" stroke="var(--brd)" stroke-width="1"/></svg>
+        <svg class="bird b-2" viewBox="0 0 9 5" width="11" height="6"><polyline points="0,0 1,1 2,2 3,3 4,3 5,3 6,2 7,1 8,0" fill="none" stroke="var(--brd)" stroke-width="1"/></svg>
+        <svg class="bird b-3" viewBox="0 0 9 5" width="9" height="5"><polyline points="0,0 1,1 2,2 3,3 4,3 5,3 6,2 7,1 8,0" fill="none" stroke="var(--brd)" stroke-width="1"/></svg>
+
+        <!-- treeline -->
+        <svg id="treeline" viewBox="0 0 100 10" preserveAspectRatio="none">
+          <rect y="6" width="100" height="4" fill="var(--tree-bg)"/>
+          <rect y="5" width="100" height="2" fill="var(--hill)"/>
+          <rect x="5" y="3" width="3" height="5" fill="var(--tree-bg)"/><rect x="4" y="4" width="5" height="3" fill="var(--tree-bg)"/>
+          <rect x="18" y="4" width="2" height="4" fill="var(--tree-bg)"/><rect x="17" y="5" width="4" height="2" fill="var(--tree-bg)"/>
+          <rect x="32" y="2" width="3" height="6" fill="var(--tree-bg)"/><rect x="31" y="3" width="5" height="4" fill="var(--tree-bg)"/>
+          <rect x="50" y="4" width="2" height="4" fill="var(--tree-bg)"/><rect x="49" y="5" width="4" height="2" fill="var(--tree-bg)"/>
+          <rect x="65" y="3" width="3" height="5" fill="var(--tree-bg)"/><rect x="64" y="4" width="5" height="3" fill="var(--tree-bg)"/>
+          <rect x="80" y="4" width="2" height="4" fill="var(--tree-bg)"/><rect x="79" y="5" width="4" height="2" fill="var(--tree-bg)"/>
+          <rect x="93" y="3" width="3" height="5" fill="var(--tree-bg)"/><rect x="92" y="4" width="5" height="3" fill="var(--tree-bg)"/>
+        </svg>
+      </div>
+      <!-- crossbars -->
+      <span class="bar bar-h"></span>
+      <span class="bar bar-v"></span>
+      <!-- glass sheen -->
+      <div id="sheen"></div>
+    </div>
+
+    <!-- curtain right -->
+    <div class="curtain crt-r">
+      <div class="crt-stripe"></div>
+      <div class="crt-stripe"></div>
+      <div class="crt-stripe"></div>
+      <div class="crt-tie"></div>
+    </div>
+  </div>
+  <div id="sill"></div>
+
+  <!-- ======= DESK ======= -->
+  <div id="desk">
+    <div id="desk-items">
+
+      <!-- LAMP -->
+      <div class="di" id="lamp">
+        <div id="lamp-glow"></div>
+        <svg viewBox="0 0 14 26" width="52" height="96" style="position:relative;z-index:2">
+          <rect x="0" y="0" width="14" height="1" fill="var(--shade-h)"/>
+          <rect x="0" y="1" width="14" height="2" fill="var(--shade)"/>
+          <rect x="1" y="3" width="12" height="2" fill="var(--shade)"/>
+          <rect x="2" y="5" width="10" height="2" fill="var(--shade-d)"/>
+          <rect x="0" y="0" width="5" height="1" fill="var(--shade-h)"/>
+          <rect x="1" y="1" width="4" height="1" fill="var(--shade-h)"/>
+          <rect x="3" y="7" width="8" height="1" fill="var(--bulb)"/>
+          <rect x="6" y="8" width="2" height="11" fill="#555"/>
+          <rect x="6" y="8" width="1" height="11" fill="#666"/>
+          <rect x="4" y="19" width="6" height="2" fill="#4a4a4a"/>
+          <rect x="3" y="21" width="8" height="2" fill="#3a3a3a"/>
+          <rect x="3" y="21" width="8" height="1" fill="#505050"/>
+          <rect x="2" y="23" width="10" height="3" fill="#333"/>
+          <rect x="2" y="23" width="10" height="1" fill="#484848"/>
+        </svg>
+      </div>
+
+      <!-- BOOKS -->
+      <div class="di" id="books">
+        <svg viewBox="0 0 21 18" width="72" height="62">
+          <!-- maroon -->
+          <rect x="0" y="12" width="14" height="6" fill="#7a2e2e"/>
+          <rect x="0" y="12" width="2" height="6" fill="#5a1e1e"/>
+          <rect x="0" y="12" width="14" height="1" fill="#943838"/>
+          <rect x="4" y="14" width="7" height="1" fill="#943838"/>
+          <rect x="13" y="13" width="1" height="5" fill="#621e1e"/>
+          <!-- navy -->
+          <rect x="1" y="7" width="13" height="5" fill="#2e4a7a"/>
+          <rect x="1" y="7" width="2" height="5" fill="#1e3a6a"/>
+          <rect x="1" y="7" width="13" height="1" fill="#3a5a8a"/>
+          <rect x="4" y="9" width="6" height="1" fill="#3a5a8a"/>
+          <!-- green -->
+          <rect x="2" y="3" width="12" height="4" fill="#2e6a3a"/>
+          <rect x="2" y="3" width="2" height="4" fill="#1e5a2a"/>
+          <rect x="2" y="3" width="12" height="1" fill="#3a7a4a"/>
+          <rect x="5" y="5" width="5" height="1" fill="#3a7a4a"/>
+          <!-- upright orange -->
+          <rect x="14" y="0" width="6" height="18" fill="#b86830"/>
+          <rect x="14" y="0" width="6" height="1" fill="#d07838"/>
+          <rect x="14" y="16" width="6" height="2" fill="#985828"/>
+          <rect x="16" y="3" width="1" height="9" fill="#d07838"/>
+          <rect x="19" y="0" width="1" height="18" fill="#985828"/>
+          <!-- page edges -->
+          <rect x="15" y="12" width="1" height="6" fill="#e8dcc8"/>
+        </svg>
+      </div>
+
+      <!-- COMPUTER -->
+      <div class="di" id="computer">
+        <div id="monitor">
+          <div id="screen">
+            <div id="scanlines"></div>
+            <span id="screen-text">hello, i'm james!</span>
+            <span id="cursor-blink">_</span>
+          </div>
+          <div id="chin"><span id="led"></span></div>
+          <div id="neck"></div>
+          <div id="base"></div>
+        </div>
+        <div id="keyboard">
+          <div class="kr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="kr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="kr"><i class="space"></i></div>
+        </div>
+      </div>
+
+      <!-- TROPHY -->
+      <button class="di" id="trophy" onclick="showAchievements()" aria-label="View achievements">
+        <span id="sparkle"></span>
+        <svg viewBox="0 0 14 20" width="48" height="68">
+          <rect x="3" y="1" width="8" height="7" fill="#e0a820"/>
+          <rect x="2" y="2" width="10" height="5" fill="#e0a820"/>
+          <rect x="3" y="1" width="8" height="1" fill="#f0c840"/>
+          <rect x="2" y="2" width="1" height="1" fill="#f0c840"/>
+          <rect x="11" y="2" width="1" height="1" fill="#c89818"/>
+          <rect x="0" y="3" width="2" height="3" fill="#c89818"/>
+          <rect x="12" y="3" width="2" height="3" fill="#c89818"/>
+          <rect x="0" y="3" width="2" height="1" fill="#e0a820"/>
+          <rect x="12" y="3" width="2" height="1" fill="#d09818"/>
+          <rect x="6" y="2" width="2" height="1" fill="#f8e060"/>
+          <rect x="5" y="3" width="4" height="1" fill="#f8e060"/>
+          <rect x="6" y="4" width="2" height="2" fill="#f8e060"/>
+          <rect x="5" y="5" width="4" height="1" fill="#f8e060"/>
+          <rect x="6" y="6" width="2" height="1" fill="#f8e060"/>
+          <rect x="3" y="7" width="8" height="1" fill="#b89010"/>
+          <rect x="5" y="8" width="4" height="4" fill="#c89818"/>
+          <rect x="5" y="8" width="4" height="1" fill="#b08810"/>
+          <rect x="3" y="12" width="8" height="2" fill="#e0a820"/>
+          <rect x="3" y="12" width="8" height="1" fill="#f0c840"/>
+          <rect x="2" y="14" width="10" height="2" fill="#c89818"/>
+          <rect x="1" y="16" width="12" height="2" fill="#e0a820"/>
+          <rect x="1" y="16" width="12" height="1" fill="#f0c840"/>
+          <rect x="1" y="18" width="12" height="2" fill="#c89818"/>
+          <rect x="1" y="18" width="12" height="1" fill="#d09818"/>
+        </svg>
+      </button>
+
+      <!-- PHONE ON STAND -->
+      <button class="di" id="phone" onclick="showSocials()" aria-label="View socials">
+        <div id="phone-unit">
+          <svg viewBox="0 0 10 20" width="38" height="76">
+            <rect x="0" y="0" width="10" height="14" fill="#222"/>
+            <rect x="0" y="0" width="10" height="1" fill="#333"/>
+            <rect x="1" y="1" width="8" height="11" fill="#0a1020"/>
+            <rect x="2" y="3" width="6" height="1" fill="#4488ee"/>
+            <rect x="2" y="5" width="6" height="1" fill="#3377dd"/>
+            <rect x="2" y="7" width="6" height="1" fill="#2266cc"/>
+            <rect x="2" y="9" width="4" height="1" fill="#1155bb"/>
+            <rect x="3" y="12" width="4" height="1" fill="#333"/>
+            <rect x="2" y="13" width="6" height="3" fill="#444"/>
+            <rect x="2" y="13" width="6" height="1" fill="#555"/>
+            <rect x="3" y="16" width="4" height="1" fill="#3a3a3a"/>
+            <rect x="1" y="17" width="8" height="3" fill="#3a3a3a"/>
+            <rect x="1" y="17" width="8" height="1" fill="#4a4a4a"/>
+          </svg>
+          <span id="ph-lbl">Socials</span>
+        </div>
+      </button>
+
+    </div>
+
+    <!-- desk surface -->
+    <div id="desk-top"></div>
+    <!-- desk front -->
+    <div id="desk-front">
+      <div class="drawer"><span class="knob"></span></div>
+      <div class="drawer"><span class="knob"></span></div>
+    </div>
+  </div>
+
+  <!-- ======= FLOOR ======= -->
+  <div id="floor"></div>
+
+  <!-- ======= DAY/NIGHT ======= -->
+  <button id="dn" onclick="toggleDN()" aria-label="Toggle day/night">
+    <svg id="dn-sun" viewBox="0 0 16 16" width="14" height="14"><rect x="7" y="0" width="2" height="2" fill="currentColor"/><rect x="7" y="14" width="2" height="2" fill="currentColor"/><rect x="0" y="7" width="2" height="2" fill="currentColor"/><rect x="14" y="7" width="2" height="2" fill="currentColor"/><rect x="4" y="4" width="8" height="8" fill="currentColor"/><rect x="2" y="2" width="2" height="2" fill="currentColor"/><rect x="12" y="2" width="2" height="2" fill="currentColor"/><rect x="2" y="12" width="2" height="2" fill="currentColor"/><rect x="12" y="12" width="2" height="2" fill="currentColor"/></svg>
+    <svg id="dn-moon" viewBox="0 0 16 16" width="14" height="14"><rect x="4" y="1" width="8" height="2" fill="currentColor"/><rect x="2" y="3" width="4" height="2" fill="currentColor"/><rect x="1" y="5" width="4" height="6" fill="currentColor"/><rect x="2" y="11" width="4" height="2" fill="currentColor"/><rect x="4" y="13" width="8" height="2" fill="currentColor"/><rect x="10" y="11" width="4" height="2" fill="currentColor"/><rect x="12" y="5" width="3" height="6" fill="currentColor"/><rect x="10" y="3" width="4" height="2" fill="currentColor"/></svg>
+    <span id="dn-label">night</span>
+  </button>
+
+</div>
+
+<!-- ======= ACHIEVEMENTS OVERLAY ======= -->
+<div id="achieve-overlay" class="overlay" onclick="hideAchievements()">
+  <div id="achieve-box" onclick="event.stopPropagation()">
+    <button class="close-btn" onclick="hideAchievements()">✕</button>
+    <h2>★ Achievements ★</h2>
+    <div id="achieve-grid">
+      <div class="acell"><span class="aicon">?</span><span class="albl">Locked</span></div>
+      <div class="acell"><span class="aicon">?</span><span class="albl">Locked</span></div>
+      <div class="acell"><span class="aicon">?</span><span class="albl">Locked</span></div>
+      <div class="acell"><span class="aicon">?</span><span class="albl">Locked</span></div>
+      <div class="acell"><span class="aicon">?</span><span class="albl">Locked</span></div>
+      <div class="acell"><span class="aicon">?</span><span class="albl">Locked</span></div>
+    </div>
+    <p class="hint">certificates will appear here soon!</p>
+  </div>
+</div>
+
+<!-- ======= SOCIALS OVERLAY ======= -->
+<div id="social-overlay" class="overlay" onclick="hideSocials()">
+  <div id="social-phone" onclick="event.stopPropagation()">
+    <div class="sp-notch"></div>
+    <div class="sp-screen">
+      <h3>Socials</h3>
+      <a href="https://www.instagram.com/jims.alc/" target="_blank" rel="noopener" class="slink">
+        <span class="sdot" style="background:#c13584">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="#fff" stroke-width="2"/><rect x="17" y="5" width="2" height="2" fill="#fff"/></svg>
+        </span>
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.facebook.com/JamesAlcarde11042008/" target="_blank" rel="noopener" class="slink">
+        <span class="sdot" style="background:#4267b2">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </span>
+        <span>Facebook</span>
+      </a>
+      <button type="button" class="slink" onclick="copyEmail()">
+        <span class="sdot" style="background:#d44638">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </span>
+        <span>Gmail</span>
+      </button>
+      <a href="https://discordapp.com/users/1500537862402212084" target="_blank" rel="noopener" class="slink">
+        <span class="sdot" style="background:#5865f2">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff"><path d="M20.317 4.369A19.79 19.79 0 0016.558 3a13.6 13.6 0 00-.69 1.42 18.27 18.27 0 00-5.736 0A13 13 0 009.44 3a19.79 19.79 0 00-3.76 1.369C2.063 9.79 1.075 15.072 1.57 20.28a19.95 19.95 0 006.06 3.06 14.7 14.7 0 001.296-2.107 12.95 12.95 0 01-2.04-.98c.171-.125.339-.255.5-.388a14.22 14.22 0 0012.226 0c.163.133.331.263.5.388-.652.388-1.336.717-2.04.98a14.7 14.7 0 001.296 2.107 19.95 19.95 0 006.06-3.06c.585-6.07-.99-11.302-4.111-15.911zM8.78 17.21c-1.182 0-2.156-1.085-2.156-2.42 0-1.337.955-2.422 2.156-2.422 1.2 0 2.176 1.085 2.156 2.422 0 1.335-.956 2.42-2.156 2.42zm6.44 0c-1.182 0-2.156-1.085-2.156-2.42 0-1.337.954-2.422 2.156-2.422 1.2 0 2.175 1.085 2.156 2.422 0 1.335-.955 2.42-2.156 2.42z"/></svg>
+        </span>
+        <span>Discord</span>
+      </a>
+    </div>
+    <div class="sp-home"></div>
+  </div>
+  <p class="zoom-hint">tap outside to close</p>
+</div>
+
+<div id="toast" class="toast-hide">Email copied!</div>
+
+<script src="script.js"></script>
+</body>
 </html>

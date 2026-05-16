@@ -1,5 +1,5 @@
-# Build Vite site and commit built files to main for GitHub Pages
-name: Deploy Vite site to Pages
+# Serve static files on GitHub Pages
+name: Deploy to Pages
 
 on:
   push:
@@ -7,7 +7,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: "pages"
@@ -15,31 +17,15 @@ concurrency:
 
 jobs:
   deploy:
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
-          node-version: 20
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy built files to repo root
-        run: |
-          cp dist/index.html index.html
-          rm -rf assets
-          cp -r dist/assets assets
-          touch .nojekyll
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html assets/ .nojekyll -f
-          git diff --staged --quiet || (git commit -m "chore: deploy built site [skip ci]" && git push)
+          path: '.'
+      - id: deployment
+        uses: actions/deploy-pages@v4
