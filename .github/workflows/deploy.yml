@@ -1,9 +1,9 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# Deploy Vite site to GitHub Pages
+name: Deploy Vite site to Pages
 
 on:
   push:
-    branches: ["main", "cursor/**"]
+    branches: ["main"]
 
   workflow_dispatch:
 
