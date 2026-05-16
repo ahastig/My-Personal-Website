@@ -17,24 +17,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@James" />
     <meta name="twitter:image" content="james-logo.png" />
-    <link rel="icon" type="image/png" href="/My-Personal-Website/james-logo.png" />
+    <link rel="icon" type="image/png" href="james-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
   </head>
 
   <body>
     <div id="root"></div>
-    <script type="module">
-      const isGitHubPages = location.hostname.endsWith("github.io");
-
-      if (isGitHubPages) {
-        const stylesheet = document.createElement("link");
-        stylesheet.rel = "stylesheet";
-        stylesheet.href = "/My-Personal-Website/assets/index.css";
-        document.head.appendChild(stylesheet);
-
-        await import("/My-Personal-Website/assets/index.js");
-      } else {
-        await import("/src/main.tsx");
-      }
-    </script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
