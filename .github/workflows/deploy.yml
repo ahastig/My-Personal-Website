@@ -1,6 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-# Triggering new build to reflect settings change
-name: Deploy static content to Pages
+name: Deploy Vite site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -27,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps:deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -38,7 +37,7 @@ jobs:
           node-version: 20
           cache: 'npm'
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Setup Pages
@@ -46,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Upload the built Vite app
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
